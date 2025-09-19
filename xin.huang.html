@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xin Huang — Personal Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 个人简介容器 */
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    /* 左边照片部分 */
+    .profile-left {
+      flex: 1;
+      text-align: center;
+      min-width: 250px;
+    }
+
+    .profile-left img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+
+    .profile-left h2 {
+      margin: 10px 0 5px 0;
+    }
+
+    .profile-left p.title {
+      font-weight: 600;
+      color: #555;
+    }
+
+    /* 右边简介部分 */
+    .profile-right {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .experience {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .experience h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .experience ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .experience li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Huang Lab</h1>
+    <h2 class="subtitle">Development and disease (leukemia and pediatric cancer)</h2>
+    <nav>
+      <a href="index.html">🏠 Home</a> |
+      <a href="xin.huang.html">👩🏻‍💻 Xin Huang</a> |
+      <a href="news.html">📰 News</a> |
+      <a href="team.html">👥 Team</a> |
+      <a href="publications.html">📚 Publications</a> |
+      <a href="resources.html">🧪 Resources</a> |
+      <a href="index.html#contact">✉️ Contact</a>
+    </nav>
+  </header>
+
+  <main>
+<!-- 上半部分：照片+简介 -->
+<div class="profile-container">
+  <!-- 左边照片 -->
+  <div class="profile-left">
+    <img src="images/PI-photo.png" alt="Dr. Xin Huang photo">
+  </div>
+
+  <!-- 右边简介 -->
+  <div class="profile-right">
+    <!-- 名字放在最上方 -->
+    <h2 class="name">Xin Huang</h2>
+
+    <!-- 职位 -->
+    <p class="title">Prof. at Shanghai Jiao Tong University School of Medicine</p>
+    <p class="title">Principal Investigator, Clinical Research Institute, Shanghai General Hospital</p>
+
+    <!-- 简介 -->
+    <p>
+      Selected for the Ministry of Education’s Talent Program, the Shanghai Leading Talent Program, and the Shanghai Pujiang Talent Program.
+    </p>
+    <p>
+      Her research focuses on stem cells and developmental disorders, particularly pediatric solid tumors and leukemia. She integrates developmental and multi-omics systems biology approaches with combined “wet” and “dry” methods to identify and mechanistically validate novel tumor targets and combination therapies to overcome drug resistance.
+    </p>
+  </div>
+</div>
+
+
+
+    <!-- 下半部分：研究经历 -->
+    <div class="experience">
+      <h3>RESEARCH EXPERIENCE</h3>
+      <ul>
+        <li>
+          <strong>Professor and Principal Investigator</strong> – Shanghai Jiao Tong University School of Medicine  
+          <br>2024.08 – now, Shanghai, China
+        </li>
+        <li>
+          <strong>Principal Investigator</strong> – Institute of Health and Medicine, Chinese Academy of Sciences  
+          <br>2023.06 – 2024.07, Hefei, Anhui Province, China
+        </li>
+        <li>
+          <strong>Garwood Fellowship Postdoctoral Fellow</strong> – St. Jude Children’s Research Hospital  
+          <br>2019.05 – 2023.05, Memphis, TN, USA  
+          Mentor: Dr. Jiyang Yu, Interim Chair of Department of Computational Biology  
+          <br>• Identifying hidden drivers and developing novel therapeutics for pediatric solid tumors and leukemia by applying integrative approaches of multiome
+        </li>
+        <li>
+          <strong>Postdoctoral Fellow</strong> – St. Jude Children’s Research Hospital  
+          <br>2017.07 – 2019.05, Memphis, TN, USA  
+          Mentor: Dr. Ryan Potts (Now Scientific Vice President at Amgen)  
+          <br>• Discovery of MAGE-directed cancer-specific PROTACs (Proteolysis Targeting Chimera)
+        </li>
+        <li>
+          <strong>Visiting Scientist</strong> – Wellcome Trust Sanger Institute  
+          <br>2017.01 – 2017.06, Cambridge, UK  
+          Mentor: Dr. Pengtao Liu (Now Professor, University of Hong Kong)  
+          <br>• Single cell sequencing analysis in Wellcome Trust Sanger Institute
+        </li>
+        <li>
+          <strong>Ph.D. Student</strong> – Institute for Health Sciences, University of Chinese Academy of Sciences  
+          <br>2010.09 – 2017.01, Shanghai, China (Successive Master’s-Doctoral program)  
+          Mentor: Dr. Guoqiang Chen (Fellow of the China Academy of Sciences)  
+          <br>• Structure, biophysics, cell and molecular biology study of drug and target protein interaction in diseases including leukemia  
+          <br>• Study abroad program - University of Cambridge
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
