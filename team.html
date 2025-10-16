@@ -49,7 +49,7 @@
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 250px;
+      width: 260px;
       padding: 15px;
       text-align: center;
       transition: transform 0.3s, box-shadow 0.3s;
@@ -60,7 +60,6 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    /* 图片容器，保证圆形 */
     .team-member .img-wrapper {
       width: 180px;
       height: 180px;
@@ -88,11 +87,41 @@
       margin: 5px 0;
     }
 
-    .team-member .interest {
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 5px;
-    }
+.team-member .role {
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.team-member .affiliation {
+  font-size: 1.1em;
+  color: #222;
+  font-style: normal;
+  margin: 5px 0;
+}
+
+.team-member.interest {
+  font-size: 0.95em;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.team-member.research {
+  font-size: 1em;
+  color: #222;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.team-member:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.team-member.img-wrapper {
+  border: 0px solid #e0e0e0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
   </style>
 </head>
 <body>
@@ -128,29 +157,35 @@
             <img src="images/QinglinMei-photo.jpg" alt="Assistant Researcher Qinglin Mei">
           </div>
           <h4>Qinglin Mei</h4>
-          <p class="role">Assistant Researcher</p>
-          <p class="interest">🏔 hiking & 🌏 traveling</p>
+<p class="role">Assistant Researcher</p>
+<p class="affiliation">Tsinghua University, Dept. of Automation (2022–2025)</p>
+<p class="research">AI, algorithm design, mathematical modeling & biomedical applications</p>
+
+          <p class="interest">Hiking·Traveling</p>
         </div>
 
         <!-- 成员 2 -->
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="images/WeixinZhang-photo.jpeg" alt="Doctoral Student Weixin Zhang">
+            <img src="images/HaimengZheng-photo.jpeg" alt="Doctoral Student Haimeng Zheng">
           </div>
-          <h4>Weixin Zhang</h4>
-          <p class="role">Ph.D. Student (2025, co-mentor)</p>
-          <p class="interest">🎤 emceeing, 🏀 basketball, 🏓 table tennis</p>
+          <h4>Haimeng Zheng</h4>
+          <p class="role">Ph.D. Student<br>(2023, co-mentor)</p>
+          <p class="affiliation">Soochow University</p>
+          <p class="interest">Puzzle·Outdoors</p>
         </div>
 
         <!-- 成员 3 -->
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="images/HaimengZheng-photo.jpeg" alt="Doctoral Student Haimeng Zheng">
+            <img src="images/WeixinZhang-photo.jpeg" alt="Doctoral Student Weixin Zhang">
           </div>
-          <h4>Haimeng Zheng</h4>
-          <p class="role">Ph.D. Student (2023, co-mentor)</p>
-          <p class="interest">🧩 puzzle & 🌲 outdoors</p>
+          <h4>Weixin Zhang</h4>
+          <p class="role">Ph.D. Student<br>(2025, co-mentor)</p>
+          <p class="affiliation">University of Science and Technology of China</p>
+          <p class="interest">Emceeing·Basketball·Table tennis</p>
         </div>
+
 
         <!-- 成员 4 -->
         <div class="team-member">
@@ -159,7 +194,8 @@
           </div>
           <h4>Yuhui Bai</h4>
           <p class="role">M.Sc. Student (2023, co-mentor)</p>
-          <p class="interest">🌏 traveling</p>
+          <p class="affiliation">Anhui Medical University</p>
+          <p class="interest">Traveling</p>
         </div>
 
       </div>
@@ -167,3 +203,12 @@
   </main>
 </body>
 </html>
+
+<footer style="padding:30px 20px; background-color:#f8f9fa; text-align:center; border-top:1px solid #ddd;">
+  <section id="contact" style="margin-bottom:15px;">
+    <h2 style="font-size:1.7em;">Contact</h2>
+    <p style="font-size:1.3em;">Email: <a href="mailto:xin.huang@sjtu.edu.cn">xin.huang@sjtu.edu.cn</a></p>
+  </section>
+  <p>&copy; 2025 Huang Lab. All rights reserved.</p>
+</footer>
+
