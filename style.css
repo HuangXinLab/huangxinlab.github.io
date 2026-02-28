@@ -222,7 +222,7 @@ html {
 .profile-right .name {
   font-family: 'Georgia', serif; /* 改字体 */
   color: #2a4d69;               /* 改颜色 */
-  font-size: 2em;               /* 字体大小 */
+  font-size: 1.5em;               /* 字体大小 */
   margin: 0 0 10px 0;           /* 与下面文字间距 */
   font-weight: bold;
 }
@@ -233,6 +233,73 @@ html {
   margin: 0;
 }
 
+
+/* Activities slider */
+#lab-activities h3{
+  font-size:2em;
+  margin-bottom:20px;
+}
+
+#lab-activities{
+  margin:60px auto;
+  max-width:1200px;
+  text-align:center;
+}
+
+.slider-wrapper{
+  position:relative;
+  overflow:hidden;
+}
+
+/* 横向滚动 */
+.slider{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  padding:20px;
+}
+
+/* 隐藏滚动条 */
+.slider::-webkit-scrollbar{
+  display:none;
+}
+
+.slider img{
+  flex:0 0 360px;
+  height:250px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.slider img:hover{
+  transform:scale(1.04);
+}
+
+/* 左右按钮 */
+.slider-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:white;
+  border:none;
+  font-size:28px;
+  cursor:pointer;
+  padding:8px 12px;
+  border-radius:50%;
+  box-shadow:0 3px 10px rgba(0,0,0,0.2);
+  z-index:10;
+}
+
+.prev{
+  left:5px;
+}
+
+.next{
+  right:5px;
+}
 
 
 

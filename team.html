@@ -145,6 +145,26 @@
       <img src="images/PI-photo.png" alt="Dr. Xin Huang photo">
       <h2>Principal Investigator — Dr. Xin Huang</h2>
     </section>
+<!-- Lab Activities Slider -->
+<section id="lab-activities">
+  <h3>Lab Activities</h3>
+
+  <div class="slider-wrapper">
+
+    <button class="slider-btn prev" onclick="slide(-1)">❮</button>
+
+    <div class="slider" id="slider">
+
+      <img src="images/2025年底聚餐.jpg">
+      <img src="images/欢迎李老师聚餐.png">
+      <img src="images/玉慧生日.png">
+
+    </div>
+
+    <button class="slider-btn next" onclick="slide(1)">❯</button>
+
+  </div>
+</section>
 
     <!-- Team Members Section -->
     <section id="team-members">
@@ -212,6 +232,8 @@
 
       </div>
     </section>
+
+
   </main>
 </body>
 </html>
@@ -223,4 +245,24 @@
   </section>
   <p>&copy; 2025 Huang Lab. All rights reserved.</p>
 </footer>
+
+
+<script>
+const slider = document.getElementById("slider");
+
+function slide(direction){
+  slider.scrollLeft += direction * 380;
+}
+
+/* 自动轮播 */
+setInterval(()=>{
+  /* 如果已经滑到末尾，就回到开头 */
+  if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5){
+    slider.scrollLeft = 0;
+  } else {
+    slide(1);
+  }
+}, 4000);
+</script>
+
 
