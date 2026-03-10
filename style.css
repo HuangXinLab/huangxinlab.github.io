@@ -234,72 +234,96 @@ html {
 }
 
 
-/* Activities slider */
-#lab-activities h3{
-  font-size:2em;
-  margin-bottom:20px;
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+  padding-left: 120px;
 }
 
-#lab-activities{
-  margin:60px auto;
-  max-width:1200px;
-  text-align:center;
-}
+/* 竖线发光效果 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 141.6px;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: #9CC6DB;
 
-.slider-wrapper{
-  position:relative;
-  overflow:hidden;
-}
-
-/* 横向滚动 */
-.slider{
-  display:flex;
-  gap:20px;
-  overflow-x:auto;
-  scroll-behavior:smooth;
-  padding:20px;
-}
-
-/* 隐藏滚动条 */
-.slider::-webkit-scrollbar{
-  display:none;
-}
-
-.slider img{
-  flex:0 0 360px;
-  height:250px;
-  object-fit:cover;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.15);
-  transition:0.3s;
-}
-
-.slider img:hover{
-  transform:scale(1.04);
-}
-
-/* 左右按钮 */
-.slider-btn{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background:white;
-  border:none;
-  font-size:28px;
-  cursor:pointer;
-  padding:8px 12px;
-  border-radius:50%;
-  box-shadow:0 3px 10px rgba(0,0,0,0.2);
-  z-index:10;
-}
-
-.prev{
-  left:5px;
-}
-
-.next{
-  right:5px;
+  /* 发光 */
+  box-shadow: 0 0 8px 2px rgba(73,136,196,0.6);
+  border-radius: 2px;
 }
 
 
+/* 每条事件 */
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+
+/* 圆点 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 16px;          /* 和竖线中心对齐 */
+  top: 8px;
+
+  width: 15px;         /* 更小一点 */
+  height: 15px;
+
+  background: #93BD57;
+  border-radius: 50%;
+
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #93BD57;
+}
+
+.lab-title {
+  text-align: center;
+}
+
+
+.timeline-content {
+  margin-left: 50px;        /* 右移到竖线右边 */
+  display: flex;
+  flex-direction: column;   /* 垂直排列 */
+  align-items: flex-start;  /* 左对齐 */
+}
+
+.timeline-content img {
+  width: 600px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  margin-left: 0;
+}
+
+.timeline-content p {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: left;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* 日期文字 */
+.timeline-date {
+  font-weight: bold;       /* 加粗 */
+  font-size: 1.3em;        /* 略大一点，可以调整，例如1.2~1.5em */
+  margin-bottom: 8px;      /* 与图片保持间距 */
+  color: #333;             /* 可以加深颜色，提高可读性 */
+}
+
+/* 图片描述文字 */
+.timeline-content p {
+  font-weight: bold;       /* 加粗 */
+  font-size: 1.1em;        /* 略大一点 */
+  text-align: center;      /* 居中显示 */
+  margin-top: 8px;         /* 与图片保持间距 */
+  color: #555;             /* 可以稍微淡一些，避免抢眼 */
+}
 
