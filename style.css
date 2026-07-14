@@ -325,6 +325,6 @@ html {
   text-align: center;      /* 居中显示 */
   margin-top: 8px;         /* 与图片保持间距 */
   color: #555;             /* 可以稍微淡一些，避免抢眼 */
-  max-width: 650px;
+  max-width: 550px;
 }
 
