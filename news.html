@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Huang Lab — News</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .timeline {position:relative;max-width:900px;margin:50px auto;padding-left:19px;}
+    .timeline::before {content:"";position:absolute;left:41.6px;top:0;bottom:0;width:2px;background:#e5e5e5;box-shadow:none;}
+    .timeline-item {position:relative;margin-bottom:25px;padding-left:40px;}
+    .timeline-item::before {content:"";position:absolute;left:16px;top:8px;width:12px;height:12px;background:#93BD57;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #93BD57;}
+    .lab-title {text-align:center;}
+    .timeline-date {font-weight:normal;font-size:1em;margin-bottom:2px;color:#333;}
+    .timeline-content {margin-left:10px;display:flex;flex-direction:column;align-items:flex-start;}
+    .timeline-content p {font-family:"Georgia","Times New Roman",serif;font-weight:400;font-size:1em;line-height:1.6;text-align:left;color:#555;margin:0 0 10px 0;max-width:1200px;}
+    .timeline-content img {width:300px;max-width:100%;height:auto;border-radius:6px;display:block;margin:0;}
+  </style>
 </head>
 <body>
   <header>
@@ -20,80 +31,122 @@
       <a href="index.html#contact">✉️ Contact</a>
     </nav>
   </header>
-
-
   <main>
-<!-- Lab Activities -->
-<h1 class="lab-title">Lab Activities</h1>
-
-<div class="timeline">
-  
-  <div class="timeline-item">
-    <div class="timeline-date">May 2026</div>
-    <div class="timeline-content">
-      <img src="images/20260711_顾老师生日.png" alt="Lab dinner">
-      <p>Lab members gathered at Dr. Gu’s home to celebrate her birthday, together with the recent birthdays of Dr. Li and Haimeng, and enjoyed a delicious homemade pork bone stew prepared by her mother.</p>
+    <h1 class="lab-title">Lab Activities</h1>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">July 2026</div>
+        <div class="timeline-content">
+          <p>Dr. Huang and Dr. Zhu visited the School of Medicine, Tsinghua University, and met with Dr. Zhu's former mentor, Dr. Charlie, from St. Jude Children’s Research Hospital.</p>
+          <img src="images/202607_huang_zhu_Tsinghua University School of Medicine.png" alt="Visit to Tsinghua University School of Medicine">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">July 2026</div>
+        <div class="timeline-content">
+          <p>Lab members gathered at Haiyan's home to celebrate her birthday, along with the recent birthdays of Ping Li and Haimeng.</p>
+          <img src="images/20260711_顾老师生日.png" alt="Lab birthday gathering">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">May 2026</div>
+        <div class="timeline-content">
+          <p>Celebrating Yuhui’s successful master’s thesis defense and the birthdays of two PIs.</p>
+          <img src="images/20260516两位老师生日_玉慧答辩结束.png" alt="Lab celebration">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">March 2026</div>
+        <div class="timeline-content">
+          <p>Welcome Haiyan and Weixin to the Huang & Zhu Lab!</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">February 2026</div>
+        <div class="timeline-content">
+          <p>Annual lab gathering before the Spring Festival.</p>
+          <img src="images/20260209年底聚餐.jpg" alt="Annual lab gathering">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">December 2025</div>
+        <div class="timeline-content">
+          <p>Celebrating Yuhui’s birthday together.</p>
+          <img src="images/20251231玉慧生日.png" alt="Yuhui birthday celebration">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">December 2025</div>
+        <div class="timeline-content">
+          <p>Welcome Ping Li to the Huang & Zhu Lab!</p>
+          <img src="images/20251209欢迎李老师.png" alt="Welcome Dr. Li">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">November 2025</div>
+        <div class="timeline-content">
+          <p>Dr. Huang taught a graduate course at the Hainan International Medical Center, Shanghai Jiao Tong University School of Medicine.</p>
+          <img src="images/202511_huang_graduate course at Hainan International Medical Center.png" alt="Graduate course at Hainan International Medical Center">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">September 2025</div>
+        <div class="timeline-content">
+          <p>Welcome Qinglin to the Huang & Zhu Lab!</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">June 2025</div>
+        <div class="timeline-content">
+          <p>Dr. Huang presented at the ISSCR Annual Meeting and visited Prof. Pengtao Liu’s seaside laboratory.</p>
+          <img src="images/202506_huang_ISSCR Annual Meeting.png" alt="ISSCR Annual Meeting">
+          <img src="images/202506_huang_zhu_visit Prof. Pengtao Liu’s seaside laboratory.png" alt="ISSCR Annual Meeting">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">May 2025</div>
+        <div class="timeline-content">
+          <p>Dr. Huang gave an invited talk at the 6th Chinese Conference on Hematological Physiology.</p>
+          <img src="images/202505_huang_Chinese Conference on Hematological Physiology.png" alt="Chinese Conference on Hematological Physiology">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">March 2025</div>
+        <div class="timeline-content">
+          <p>Welcome Haimeng and Yuhui to the Huang & Zhu Lab!</p>
+          <img src="images/202503_huang_welcome haimeng and yuhui.png" alt="Welcome Haimeng and Yuhui">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">January 2025</div>
+        <div class="timeline-content">
+          <p>Dr. Huang has been officially appointed as a Research Professor (Full Professor equivalent) at Shanghai Jiao Tong University School of Medicine!</p>
+          <img src="images/202511_huang_graduate course at Hainan International Medical Center.png" alt="Academic promotion">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">August 2024</div>
+        <div class="timeline-content">
+            <p>Dr. Huang gave a talk at the 2024 International Conference on Life Sciences, Guiyang, China — The 19th SCBA / 14th CBIS Biennial Symposium of the Society of Chinese Bioscientists in America (SCBA) and the Chinese Biological Investigators Society (CBIS) — and met with her mentor from St. Jude.
+          </p>
+          <img src="images/202408_huang_International Conference on Life Sciences.png" alt="2024 International Conference on Life Sciences">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">October 2023</div>
+        <div class="timeline-content">
+          <p>Dr. Zhu gave an invited talk at the Chinese Stem Cell Annual Meeting.</p>
+          <img src="images/202310_zhu_Chinese Stem Cell Annual Meeting.png" alt="Chinese Stem Cell Annual Meeting">
+        </div>
+      </div>
     </div>
-  </div>
-
-
-    <div class="timeline-item">
-    <div class="timeline-date">May 2026</div>
-    <div class="timeline-content">
-      <img src="images/20260516两位老师生日_玉慧答辩结束.png" alt="Lab dinner">
-      <p>Celebrating Yuhui's master's defense success & two PIs' birthdays.</p>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Feb 2026</div>
-    <div class="timeline-content">
-      <img src="images/20260209年底聚餐.jpg" alt="Lab dinner">
-      <p>Annual lab gathering before the Spring Festival.</p>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Dec 2025</div>
-    <div class="timeline-content">
-      <img src="images/20251231玉慧生日.png" alt="Birthday celebration">
-      <p>Celebrating Yuhui's birthday together.</p>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Dec 2025</div>
-    <div class="timeline-content">
-      <img src="images/20251209欢迎李老师.png" alt="Welcome event">
-      <p>Welcoming Dr. Li to join Huang Lab.</p>
-    </div>
-  </div>
-
-</div>
-
- <!--<h1>News</h1>
-<ul class="news-list">
-  <li>
-    <span class="news-year">2025:</span>
-    <span class="news-item">
-      Published in <em>Satr Protocal</em>: "Protocol for predicting single-cell network-based gene activity landscape during human B cell development." 
-    </span>
-  </li>
-  <li>
-    <span class="news-year">2024:</span>
-    <span class="news-item">
-      Published in <em>Cancer Cell</em>: "Single-cell systems pharmacology identifies development-driven drug response and combination therapy in B cell acute lymphoblastic leukemia."
-    </span>
-  </li> -->
-    </ul>
   </main>
+  <footer style="padding:30px 20px;background-color:#f8f9fa;text-align:center;border-top:1px solid #ddd;">
+    <section id="contact" style="margin-bottom:15px;">
+      <h2 style="font-size:1.7em;">Contact</h2>
+      <p style="font-size:1.3em;">Email: <a href="mailto:xin.huang@sjtu.edu.cn">xin.huang@sjtu.edu.cn</a></p>
+    </section>
+    <p>&copy; 2025 Huang Lab. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
-<footer style="padding:30px 20px; background-color:#f8f9fa; text-align:center; border-top:1px solid #ddd;">
-  <section id="contact" style="margin-bottom:15px;">
-    <h2 style="font-size:1.7em;">Contact</h2>
-    <p style="font-size:1.3em;">Email: <a href="mailto:xin.huang@sjtu.edu.cn">xin.huang@sjtu.edu.cn</a></p>
-  </section>
-  <p>&copy; 2025 Huang Lab. All rights reserved.</p>
-</footer>

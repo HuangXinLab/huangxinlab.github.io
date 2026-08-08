@@ -6,119 +6,110 @@
   <title>Huang Lab — Team</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* PI Section */
-    #pi-section {
-      text-align: center;
-      margin: 40px auto;
-      max-width: 800px;
-    }
-
-    #pi-section img {
-      max-width: 250px;
-      height: auto;
-      border-radius: 100%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    #pi-section h2 {
-      margin-top: 0;
-      font-size: 1.8em;
-    }
-
-    /* Team Section */
-    #team-members {
-      margin: 40px auto;
-      max-width: 1200px;
-      text-align: center;
-    }
-
-    #team-members h3 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .team-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .team-member {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 260px;
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .team-member:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    .team-member .img-wrapper {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto 10px auto;
-      border: 3px solid #eee;
-    }
-
-    .team-member .img-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .team-member h4 {
-      margin: 10px 0 5px 0;
-      font-size: 1.2em;
-    }
-
-    .team-member .role {
-      font-weight: bold;
-      color: #333;
-      margin: 5px 0;
-    }
-
-.team-member .role {
-  font-weight: 600;
-  color: #222;
-  text-transform: uppercase;
+/* PI Section */
+#pi-section {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
 }
 
-.team-member .affiliation {
-  font-size: 1.1em;
-  color: #222;
-  font-style: normal;
-  margin: 5px 0;
+#pi-section img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
-.team-member.interest {
-  font-size: 0.95em;
-  color: #666;
-  margin-top: 8px;
-  line-height: 1.5;
+#pi-section h2 {
+  margin-top: 0;
+  font-size: 1.8em;
 }
-.team-member.research {
-  font-size: 1em;
-  color: #222;
-  margin-top: 8px;
-  line-height: 1.5;
+
+
+/* Team Section */
+#team-members {
+  margin: 40px auto;
+  max-width: 1200px;
+  text-align: center;
 }
+
+#team-members h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .team-member:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
-.team-member.img-wrapper {
-  border: 0px solid #e0e0e0;
+
+
+/* Photo */
+.team-member .img-wrapper {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  margin: 0 auto 10px;
+  border: 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.team-member .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Text */
+.team-member h4 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.team-member .role {
+  font-weight: bold;
+  color: #333;
+  margin: 1px 0;
+}
+
+.team-member .time {
+  margin: 0;
+}
+
+.team-member .affiliation {
+  font-size: 0.9em;
+  color: #222;
+  margin: 5px 0;
+}
+
+.team-member .research,
+.team-member .interest {
+  font-size: 0.9em;
 }
 
 
@@ -158,7 +149,8 @@
           </div>
           <h4>Ping Li</h4>
           <p class="role">Assistant Researcher</p>
-          <p class="affiliation">Shanghai Jiao Tong University, BIO-X Institute(2018–2025)</p>
+          <p class="time">(2025-present)</p>
+          <p class="affiliation">Asst. Researcher & Postdoc, BIO-X Institutes, Shanghai Jiao Tong University (2018–2025)</p>
           <p class="research">Lineage tracing, MSC, solid tumor</p>
           <p class="interest">Badminton·Running</p>
         </div>
@@ -171,8 +163,9 @@
           </div>
           <h4>Qinglin Mei</h4>
           <p class="role">Assistant Researcher</p>
-          <p class="affiliation">Tsinghua University, Dept. of Automation (2022–2025)</p>
-          <p class="research">AI, algorithm design, mathematical modeling & biomedical applications</p>
+          <p class="time">(2025-present)</p>
+          <p class="affiliation">Postdoc, Dept. of Automation, Tsinghua University (2022–2025)</p>
+          <p class="research">AI, algorithm design, biomedical applications</p>
           <p class="interest">Hiking·Traveling</p>
         </div>
 
@@ -183,9 +176,9 @@
           </div>
           <h4>Haiyan Gu</h4>
           <p class="role">Assistant Researcher</p>
-          <p class="affiliation">Chinese Academy of Sciences, Institute of Zoology (2014–2022)</p>
-          <p class="affiliation">NCNST (2022-2025)</p>
-          <p class="research">Molecular biology; Signal transduction; Immunotherapy</p>
+          <p class="time">(2026-present)</p>
+          <p class="affiliation">Postdoc, National Center for Nanoscience and Technology (2022-2025)</p>
+          <p class="research">Molecular biology, signal transduction, immunotherapy</p>
           <p class="interest">Swimming·Climbing</p>
         </div>
 
@@ -195,7 +188,8 @@
             <img src="images/HaimengZheng-photo.jpeg" alt="Doctoral Student Haimeng Zheng">
           </div>
           <h4>Haimeng Zheng</h4>
-          <p class="role">Ph.D. Student<br>(2023, co-mentor)</p>
+          <p class="role">Ph.D. Student<br></p>
+          <p class="time">(2024-present)</p>
           <p class="affiliation">Soochow University</p>
           <p class="interest">Puzzle·Outdoors</p>
         </div>
@@ -206,7 +200,8 @@
             <img src="images/WeixinZhang-photo.jpeg" alt="Doctoral Student Weixin Zhang">
           </div>
           <h4>Weixin Zhang</h4>
-          <p class="role">Ph.D. Student<br>(2025, co-mentor)</p>
+          <p class="role">Ph.D. Student<br></p>
+          <p class="time">(2025-present)</p>
           <p class="affiliation">University of Science and Technology of China</p>
           <p class="interest">Emceeing·Basketball·Table tennis</p>
         </div>
@@ -218,7 +213,7 @@
             <img src="images/YuhuiBai-photo.jpg" alt="Master Student Yuhui Bai">
           </div>
           <h4>Yuhui Bai</h4>
-          <p class="role">M.Sc. Student<br>(2023, co-mentor)</p>
+          <p class="role">M.Sc. Student<br></p>
           <p class="affiliation">Anhui Medical University</p>
           <p class="interest">Traveling</p>
         </div>
