@@ -14,11 +14,12 @@
 }
 
 #pi-section img {
-  max-width: 250px;
+  width: 250px;
   height: auto;
-  border-radius: 100%;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
 }
 
 #pi-section h2 {
@@ -30,7 +31,7 @@
 /* Team Section */
 #team-members {
   margin: 40px auto;
-  max-width: 1200px;
+  max-width: 1300px;
   text-align: center;
 }
 
@@ -40,14 +41,15 @@
 }
 
 .team-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 .team-member {
-  width: 300px;
+  width: auto;
+  min-width: 0;
   box-sizing: border-box;
   padding: 15px;
   text-align: center;
@@ -58,7 +60,6 @@
 
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .team-member:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
@@ -160,6 +161,19 @@
       <h3>Team Members</h3>
       <div class="team-container">
 
+      <!-- 成员 -->
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="images/QinglinMei-photo.jpg" alt="Assistant Researcher Qinglin Mei">
+          </div>
+          <h4>Qinglin Mei</h4>
+          <p class="role">Assistant Researcher</p>
+          <p class="time">(2025-present)</p>
+          <p class="affiliation">Postdoc, Dept. of Automation, Tsinghua University (2022–2025)</p>
+          <p class="research">Algorithm design, multi-omics analysis, biomedical applications</p>
+          <p class="interest">Hiking·Traveling</p>
+        </div>
+
 
       <!-- 成员 -->
         <div class="team-member">
@@ -178,19 +192,6 @@
         <!-- 成员 -->
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="images/QinglinMei-photo.jpg" alt="Assistant Researcher Qinglin Mei">
-          </div>
-          <h4>Qinglin Mei</h4>
-          <p class="role">Assistant Researcher</p>
-          <p class="time">(2025-present)</p>
-          <p class="affiliation">Postdoc, Dept. of Automation, Tsinghua University (2022–2025)</p>
-          <p class="research">AI, algorithm design, biomedical applications</p>
-          <p class="interest">Hiking·Traveling</p>
-        </div>
-
-        <!-- 成员 -->
-        <div class="team-member">
-          <div class="img-wrapper">
             <img src="images/HaiyanGu-photo.jpg" alt="Assistant Researcher Haiyan Gu">
           </div>
           <h4>Haiyan Gu</h4>
@@ -199,6 +200,19 @@
           <p class="affiliation">Postdoc, National Center for Nanoscience and Technology (2022-2025)</p>
           <p class="research">Molecular biology, signal transduction, immunotherapy</p>
           <p class="interest">Swimming·Climbing</p>
+        </div>
+
+        <!-- 成员 -->
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="images/YuhuiBai-photo.jpg" alt="Master Student Yuhui Bai">
+          </div>
+          <h4>Yuhui Bai</h4>
+          <p class="role"> Research Technician <br></p>
+          <p class="time">(M.S. training in the Huang Lab)</p>
+          <p class="affiliation">Anhui Medical University</p>
+          <p class="research">Molecular cloning, genome editing, drug-resistance target discovery</p>
+          <p class="interest">Traveling</p>
         </div>
 
         <!-- 成员 -->
@@ -225,17 +239,30 @@
           <p class="interest">Emceeing·Basketball·Table tennis</p>
         </div>
 
+        <!-- 成员 -->
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="images/JingHan-photo.jpg" alt="Doctoral Student Jing Han">
+          </div>
+          <h4>Jing Han</h4>
+          <p class="role">Ph.D. Student<br></p>
+          <p class="time">(2026-present)</p>
+          <p class="affiliation"> Shanghai Jiao Tong University</p>
+          <p class="interest">Outdoor Sports·travelling</p>
+        </div>
 
         <!-- 成员 -->
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="images/YuhuiBai-photo.jpg" alt="Master Student Yuhui Bai">
+            <img src="images/JianyuHuang-photo.jpeg" alt="Undergraduate Student Jianyu Huang">
           </div>
-          <h4>Yuhui Bai</h4>
-          <p class="role">M.Sc. Student<br></p>
-          <p class="affiliation">Anhui Medical University</p>
-          <p class="interest">Traveling</p>
+          <h4>Jianyu Huang</h4>
+          <p class="role">Undergraduate Student<br></p>
+          <p class="time">(2026-present)</p>
+          <p class="affiliation">Sun Yat-Sen University</p>
+          <p class="interest">Tennis·Photography</p>
         </div>
+
 
       </div>
     </section>
