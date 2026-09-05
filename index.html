@@ -20,6 +20,69 @@
       <a href="resources.html">🧪 Resources</a> |
       <a href="#contact">✉️ Contact</a>
     </nav>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huang Lab — Home</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* 左右两栏容器 */
+.content-container {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  align-items: flex-start;
+}
+
+/* 左侧内容 */
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 右侧栏：适当加宽 */
+.sidebar {
+  flex: 0 0 360px;
+  width: 360px;
+}
+    /* Collaborators 列表 */
+    .collaborator-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .collaborator-list li {
+      margin-bottom: 18px;
+    }
+
+    .collaborator-affiliation {
+      display: block;
+      margin-top: 4px;
+      color: #666;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    /* 手机和平板布局 */
+    @media (max-width: 768px) {
+      .content-container {
+        flex-direction: column;
+        width: 92%;
+        gap: 20px;
+      }
+
+      .main-content,
+      .sidebar {
+        width: 100%;
+        flex: none;
+      }
+    }
+
+
+
+  </style>
+
   </header>
 
   <div class="content-container">
@@ -58,9 +121,44 @@
     <aside class="sidebar">
       <section class="collaborators">
         <h2>Collaborators</h2>
-        <ul>
-          <li><a href="https://zhexinzhu.github.io/" target="_blank">Dr. Zhexin Zhu</a></li>
-        </ul>
+
+
+
+
+<ul class="collaborator-list">
+  <li>
+    <a href="https://scholar.google.com/citations?user=L8kJQbcAAAAJ&hl=en"
+       target="_blank"
+       rel="noopener noreferrer">Dr. Junke Zheng</a>
+    <br>
+    <span class="collaborator-affiliation">Shanghai Jiao Tong University School of Medicine</span>
+  </li>
+
+  <li>
+    <a href="https://www.muhn.edu.cn/hnyky/td/ssm_yj.htm"
+       target="_blank"
+       rel="noopener noreferrer">Dr. Shaoming Shen</a>
+    <br>
+    <span class="collaborator-affiliation">Hainan Academy of Medical Sciences</span>
+  </li>
+
+  <li>
+    <a href="https://imb.nju.edu.cn/rcdw/zzpxl/20220402/i220299.html"
+       target="_blank"
+       rel="noopener noreferrer">Dr. Jingqian Huang</a>
+    <br>
+    <span class="collaborator-affiliation">Institute of Modern Biology, Nanjing University</span>
+  </li>
+
+  <li>
+    <a href="https://zhexinzhu.github.io/"
+       target="_blank"
+       rel="noopener noreferrer">Dr. Zhexin Zhu</a>
+       <br>
+    <span class="collaborator-affiliation">Shanghai Jiao Tong University School of Medicine</span>
+  </li>
+</ul>
+
       </section>
 
       <section class="links">
